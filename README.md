@@ -19,3 +19,20 @@ So many solutions are available online however they are hosted on the cloud, and
   - Integrating Swagger for the api documentation
   - Building public queues and private queues.
   - Building the template engine.
+
+### References
+
+Mail Spaghetti uses a number of open source projects to work properly:
+
+* [Keycloak] - Identity Management System Open Source 
+* [AngularJS] - HTML enhanced for web apps!
+* [Ace Editor] - awesome web-based text editor
+* [markdown-it] - Markdown parser done right. Fast and easy to extend.
+* [jQuery] - duh
+
+[Keycloak]: <https://www.keycloak.org>
+[df1]: <http://daringfireball.net/projects/markdown/>
+[markdown-it]: <https://github.com/markdown-it/markdown-it>
+[Ace Editor]: <http://ace.ajax.org>
+[jQuery]: <http://jquery.com>
+[AngularJS]: <http://angularjs.org>
