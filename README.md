@@ -10,7 +10,7 @@ So many solutions are available online however they are hosted on the cloud, and
   - Centralized e-mail engine which will allow all applications to push and send emails from. Allowing external applications or cloud services to push emails from allowed on premise authorized smtp servers.
   - Interms of security this will make sure that only this application is authorized to access the smtp server. Others would need to obtain access from keycloak.
   - Centralized email designs even if you have multiple applications from different vendors or contractors.
-  - Segrigation of duties between Dev and Content team.
+  - Segregation of duties between Dev and Content team.
 
 ## Initial Release 0.0.1
 
