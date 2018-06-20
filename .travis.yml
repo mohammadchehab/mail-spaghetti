@@ -1,0 +1,9 @@
+jdk:
+  - oraclejdk8
+
+cache:
+  cache: false
+
+install: true
+
+sudo: false
