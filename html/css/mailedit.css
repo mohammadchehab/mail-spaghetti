@@ -1,0 +1,47 @@
+.dragme {
+    position: relative;
+    border: 2px dotted transparent;
+}
+
+.dragme:hover {
+    border: 2px dotted #0281F8;
+}
+
+.dragme:hover .dragHoverEditWrapper{
+    display: block;
+}
+
+.dragHoverEditWrapper {
+    background: #fff;
+    width: 73px;
+    height: 38px;
+    position: absolute;
+    top: -38px;
+    right: -2px;
+    border-top: 2px solid #0281F8;
+    border-bottom: 2px solid #0281F8;
+    display: none;
+}
+
+.dragHoverEditBtnBox {
+    width: 50%;
+    height: 36px;
+    float: left;
+    border-right: 2px solid #0281F8;
+    border-left: 2px solid #0281F8;
+    cursor: pointer;
+    position: relative;
+}
+
+.dragHoverEditBtnBox:last-child {
+    border-left: 0px;
+}
+
+.dragHoverEditBtnBox img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
