@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Fav@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.03347,18.947761 L15.708,20.562 C16.5721086,21.0835413 17.6953998,20.8058356 18.2169411,19.941727 C18.4630845,19.5339076 18.5402676,19.0460984 18.4320491,18.5822105 L17.7222516,15.539603 C17.5535882,14.8166128 17.7992821,14.0596842 18.3604096,13.5735792 L20.7276525,11.5228358 C21.4901759,10.8622616 21.5728219,9.70861307 20.9122477,8.94608975 C20.6004633,8.58618644 20.1604676,8.36225386 19.686,8.322 L16.573729,8.05795476 C15.8345726,7.99524468 15.1908424,7.52857111 14.901366,6.84557167 L13.686,3.978 C13.2913488,3.04684791 12.2165729,2.611928 11.2854208,3.00657919 C10.8478174,3.1920491 10.4994699,3.54039662 10.314,3.978 L9.09863403,6.84557167 C8.80915764,7.52857111 8.16542741,7.99524468 7.42627096,8.05795476 L4.314,8.322 C3.30875052,8.40728542 2.56297229,9.29133864 2.64825771,10.2965881 C2.68851157,10.7710557 2.91244415,11.2110514 3.27234747,11.5228358 L5.63959036,13.5735792 C6.20071792,14.0596842 6.44641181,14.8166128 6.27774837,15.539603 L5.5679509,18.5822105 C5.33865196,19.5651199 5.94957401,20.547809 6.93248349,20.777108 C7.39637139,20.8853265 7.88418061,20.8081434 8.292,20.562 L10.96653,18.947761 C11.6021128,18.5641487 12.3978872,18.5641487 13.03347,18.947761 Z" id="path-1"></path>
+        <filter x="-116.7%" y="-87.7%" width="333.3%" height="345.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.650980392   0 0 0 0 0.654901961   0 0 0 0 0.854901961  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons/Fav" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Fav">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Shape" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#A6A7DA" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Fill/Primary" mask="url(#mask-2)" fill="#0281F8">
+                <rect x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

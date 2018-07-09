@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Button@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,11.24 L9,7.5 C9,6.12 10.12,5 11.5,5 C12.88,5 14,6.12 14,7.5 L14,11.24 C15.21,10.43 16,9.06 16,7.5 C16,5.01 13.99,3 11.5,3 C9.01,3 7,5.01 7,7.5 C7,9.06 7.79,10.43 9,11.24 Z M18.84,15.87 L14.3,13.61 C14.13,13.54 13.95,13.5 13.76,13.5 L13,13.5 L13,7.5 C13,6.67 12.33,6 11.5,6 C10.67,6 10,6.67 10,7.5 L10,18.24 L6.57,17.52 C6.49,17.51 6.42,17.49 6.33,17.49 C6.02,17.49 5.74,17.62 5.54,17.82 L4.75,18.62 L9.69,23.56 C9.96,23.83 10.34,24 10.75,24 L17.54,24 C18.29,24 18.87,23.45 18.98,22.72 L19.73,17.45 C19.74,17.38 19.75,17.31 19.75,17.25 C19.75,16.63 19.37,16.09 18.84,15.87 Z" id="path-1"></path>
+        <filter x="-186.7%" y="-95.2%" width="473.3%" height="366.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.650980392   0 0 0 0 0.654901961   0 0 0 0 0.854901961  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons/Button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Button">
+            <rect id="Rectangle-14" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Shape" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#A6A7DA" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Fill/Primary" mask="url(#mask-2)" fill="#0281F8">
+                <rect x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

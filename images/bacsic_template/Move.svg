@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Move@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14.3333333,5 L16.1222222,6.78888889 L13.8744444,9.02111111 L14.9788889,10.1255556 L17.2111111,7.87777778 L19,9.66666667 L19,5 L14.3333333,5 Z M5,9.66666667 L6.78888889,7.87777778 L9.02111111,10.1255556 L10.1255556,9.02111111 L7.87777778,6.78888889 L9.66666667,5 L5,5 L5,9.66666667 Z M9.66666667,19 L7.87777778,17.2111111 L10.1255556,14.9788889 L9.02111111,13.8744444 L6.78888889,16.1222222 L5,14.3333333 L5,19 L9.66666667,19 Z M19,14.3333333 L17.2111111,16.1222222 L14.9788889,13.8744444 L13.8744444,14.9788889 L16.1222222,17.2111111 L14.3333333,19 L19,19 L19,14.3333333 Z" id="path-1"></path>
+        <filter x="-200.0%" y="-142.9%" width="500.0%" height="500.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.650980392   0 0 0 0 0.654901961   0 0 0 0 0.854901961  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Icons/Move" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Move">
+            <rect id="Rectangle-4" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Shape" fill-rule="nonzero" transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#A6A7DA" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Fill/Primary" mask="url(#mask-2)" fill="#0281F8">
+                <rect x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

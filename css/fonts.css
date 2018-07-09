@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../fonts/opensans-Regular.eot');
+	src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/opensans-Regular.svg#opensans-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+l{
+    background: url("../fonts/opensans-regular-webfont.woff")
+}
+
+@font-face {
+	font-family: 'NeoSansArabic';
+	src: url('../fonts/ar/NeoSansArabic.eot');
+	src: url('../fonts/ar/NeoSansArabic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ar/NeoSansArabic.woff') format('woff'),
+		url('../fonts/ar/NeoSansArabic.svg#NeoSansArabic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Dubai-Regular';
+	src: url('../fonts/DubaiW23-Regular.eot');
+	src: url('../fonts/DubaiW23-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DubaiW23-Regular.woff') format('woff'),
+		url('../fonts/DubaiW23-Regular.svg#DubaiW23-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Dubai-Medium';
+	src: url('../fonts/DubaiW23-Medium.eot');
+	src: url('../fonts/DubaiW23-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DubaiW23-Medium.woff') format('woff'),
+		url('../fonts/DubaiW23-Medium.svg#DubaiW23-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
