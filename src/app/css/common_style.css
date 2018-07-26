@@ -1,4 +1,10 @@
 @import url("fonts.css");
+
+body,
+html {
+    height: 100%
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -128,6 +134,11 @@ a:hover {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.editTemplate,
+.templateGallery {
+    display: none;
 }
 
 .mainHeader {
@@ -355,7 +366,8 @@ a:hover {
 
 .EditSectionWrapper {
     width: 620px;
-    min-height: 500px;
+    /*    min-height: 500px;*/
+    height: 100%;
     background: #fff;
     float: left;
     margin-right: 20px;
@@ -447,11 +459,11 @@ a:hover {
     position: relative;
     margin-right: 5px;
     margin-left: 5px;
-    transition: all ease-in 100ms;
+    /*    transition: all ease-in 100ms;*/
     cursor: move;
 }
 
-.ComponentsItem:hover{
+.ComponentsItem:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.22);
     z-index: 100;
 }
@@ -492,7 +504,7 @@ a:hover {
     height: 72px;
 }
 
-.media.Components{
+.media.Components {
     overflow: visible;
 }
 
@@ -549,7 +561,7 @@ a:hover {
 }
 
 .colorPickerWrapper input[type="color"]::-webkit-color-swatch-wrapper {
-	padding: 0;
+    padding: 0;
 }
 
 .colorPickerWrapper input[type="color"]::-webkit-color-swatch {
@@ -565,23 +577,24 @@ a:hover {
     width: 82px;
 }
 
-.fontCustomWrapper:after{
+.fontCustomWrapper:after {
     content: "";
     clear: both;
     display: block;
 }
-.fontCustom-6{
+
+.fontCustom-6 {
     float: left;
     width: 50%;
     padding: 5px;
 }
 
-.fontCustomWrapper .componentsItemFontTitle{
+.fontCustomWrapper .componentsItemFontTitle {
     padding: 0px;
 }
 
 .fontPickerWrapper select,
-.fontSizeWrapper select{
+.fontSizeWrapper select {
     border: none;
     height: 48px;
     width: 100%;
@@ -589,17 +602,158 @@ a:hover {
     color: #ADB0C7;
 }
 
-.componentsItemPaddingTitle{
+.componentsItemPaddingTitle {
     font-size: 14px;
     color: #727272;
     padding: 0px;
     margin-bottom: 8px;
 }
 
-.PaddingWrapper input[type="number"]{
+.PaddingWrapper input[type="number"] {
     border: none;
     height: 48px;
     width: 100%;
     padding: 5px;
     color: #ADB0C7;
 }
+
+.EditSectionWrapper table {
+    height: 100%;
+}
+
+.EditSectionWrapper:empty {
+    min-height: 500px;
+}
+
+.EditSectionWrapper table td {
+    position: relative;
+}
+
+.EditSectionWrapper > table > thead > tr > td,
+.EditSectionWrapper > table > tbody > tr > td,
+.EditSectionWrapper > table > tfoot > tr > td {
+    border: 1px dashed #d8d8d8;
+}
+
+.EditSectionWrapper > table > thead > tr > td:empty,
+.EditSectionWrapper > table > tbody > tr > td:empty,
+.EditSectionWrapper > table > tfoot > tr > td:empty {
+    border: 1px dashed #0381f8;
+    height: 100px;
+    position: relative;
+}
+
+.EditSectionWrapper table td#bt-3col-side-left table,
+.EditSectionWrapper table td#bt-3col-side-center table,
+.EditSectionWrapper table td#bt-3col-side-right table,
+.EditSectionWrapper table td#bt-head table,
+.EditSectionWrapper table td#bt-body table,
+.EditSectionWrapper table td#bt-footer table {
+    border-spacing: initial !important;
+    border-collapse: separate;
+}
+
+
+.EditSectionWrapper table td#bt-3col-side-left:empty:before,
+.EditSectionWrapper table td#bt-3col-side-center:empty:before,
+.EditSectionWrapper table td#bt-3col-side-right:empty:before,
+.EditSectionWrapper table td#bt-head:empty:before,
+.EditSectionWrapper table td#bt-body:empty:before,
+.EditSectionWrapper table td#bt-footer:empty:before {
+    content: "Drag it here";
+    display: block;
+    position: absolute;
+    color: #3FA9F5;
+    line-height: normal;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    padding: 2% 0;
+}
+
+.EditSectionWrapper table td:focus:after,
+.EditSectionWrapper table td:hover:after {
+    content: "";
+    background: #0381f8;
+    color: #fff;
+    font-size: 12px;
+    top: -28px;
+    right: -1px;
+    position: absolute;
+}
+
+.EditSectionWrapper table td#bt-head:empty:focus:after,
+.EditSectionWrapper table td#bt-head:empty:hover:after {
+    content: "Header Section";
+    padding: 5px;
+}
+
+.EditSectionWrapper table td#bt-body:empty:focus:after,
+.EditSectionWrapper table td#bt-body:empty:hover:after {
+    content: "Body Section";
+    padding: 5px;
+}
+
+.EditSectionWrapper table td#bt-footer:empty:focus:after,
+.EditSectionWrapper table td#bt-footer:empty:hover:after {
+    content: "Footer Section";
+    padding: 5px;
+}
+
+
+.EditSectionWrapper table td#bt-3col-side-left:empty:focus:after,
+.EditSectionWrapper table td#bt-3col-side-left:empty:hover:after {
+    content: "body Left Side";
+    padding: 5px;
+}
+
+.EditSectionWrapper table td#bt-3col-side-center:empty:focus:after,
+.EditSectionWrapper table td#bt-3col-side-center:empty:hover:after {
+    content: "body Center Side";
+    padding: 5px;
+}
+
+.EditSectionWrapper table td#bt-3col-side-right:empty:focus:after,
+.EditSectionWrapper table td#bt-3col-side-right:empty:hover:after {
+    content: "body Right Side";
+    padding: 5px;
+}
+
+.removeBtn {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    display: none;
+}
+
+.removeBtn button {
+    border: 0px;
+    background: #0581f8;
+    outline: none;
+    color: #fff;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+table.delete:hover .removeBtn {
+    display: block;
+}
+
+.EditSectionWrapper > table > thead > tr > td.ui-droppable-hover,
+.EditSectionWrapper > table > tbody > tr > td.ui-droppable-hover,
+.EditSectionWrapper > table > tfoot > tr > td.ui-droppable-hover {
+    border: 1px solid #0381f8;
+}
+
+/*
+.EditSectionWrapper:empty{
+    background: red !important;
+}*/

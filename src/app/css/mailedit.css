@@ -1,10 +1,10 @@
 .dragme {
     position: relative;
-    border: 2px dotted transparent;
+    border: 1px dotted transparent;
 }
 
 .dragme:hover {
-    border: 2px dotted #0281F8;
+    border: 1px dotted #0281F8;
 }
 
 .dragme:hover .dragHoverEditWrapper{
@@ -17,9 +17,9 @@
     height: 38px;
     position: absolute;
     top: -38px;
-    right: -2px;
-    border-top: 2px solid #0281F8;
-    border-bottom: 2px solid #0281F8;
+    right: -1px;
+    border-top: 1px solid #0281F8;
+    border-bottom: 1px solid #0281F8;
     display: none;
 }
 
@@ -27,8 +27,8 @@
     width: 50%;
     height: 36px;
     float: left;
-    border-right: 2px solid #0281F8;
-    border-left: 2px solid #0281F8;
+    border-right: 1px solid #0281F8;
+    border-left: 1px solid #0281F8;
     cursor: pointer;
     position: relative;
 }

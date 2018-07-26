@@ -1,60 +1,74 @@
-jQuery.noConflict();
-jQuery(window).load(function () {
+    jQuery(document).ready(function () {
+        
+        jQuery("#bt-head, #bt-body, #bt-footer, bt-3col-side-left, bt-3col-side-center, bt-3col-side-right").sortable({
+            connectWith: '#bt-head, #bt-body, #bt-footer, bt-3col-side-left, bt-3col-side-center, bt-3col-side-right',
+        });
 
-    jQuery("#sortable").sortable();
-    jQuery("#sortable").disableSelection();
+        jQuery("#bt-head, #bt-body, #bt-footer, bt-3col-side-left, bt-3col-side-center, bt-3col-side-right").disableSelection();
 
-    jQuery(".basicTemp").draggable({
-        containment: 'document',
-        revert: "invalid",
-        helper: "clone",
-        cursor: "move"
+        jQuery(".ComponentsItem").draggable({
+            connectToSortable: "#bt-head, #bt-body, #bt-footer, bt-3col-side-left, bt-3col-side-center, bt-3col-side-right",
+            containment: 'document',
+            helper: "clone",
+            revert: "invalid",
+            tolerance: "pointer",
+            scroll: false,
+            aspectRatio: true,
+            zIndex: 10000,
+            revertDuration: 0
+        });
+
+        //basicTempHeader
+        jQuery(".EditSectionWrapper").droppable({
+            accept: ".basicTempHeader",
+            drop: function (event, ui) {
+                jQuery(this).append('<table cellpadding="0" cellspacing="0" width="600"><thead><tr><td class="sortable" id="bt-head"></td></tr></thead></table>');
+                if (jQuery(".EditSectionWrapper").length === 1) {
+                    jQuery('.basicTempHeader').draggable({
+                        disabled: true,
+                        revert: "valed",
+                    });
+                }
+            }
+        });
+
+        //basicTempCenter
+        jQuery(".EditSectionWrapper").droppable({
+            accept: ".basicTempCenter",
+            sortable: 'true',
+            drop: function (event, ui) {
+                jQuery(this).append('<table cellpadding="0" cellspacing="0" width="600"><tbody><tr><td class="sortable" id="bt-body"></td></tr></tbody></table>');
+            }
+        });
+
+        //basicTempFooter
+        jQuery(".EditSectionWrapper").droppable({
+            accept: ".basicTempFooter",
+            drop: function (event, ui) {
+                jQuery(this).append('<table cellpadding="0" cellspacing="0" width="600"><tfoot><tr><td class="sortable" id="bt-footer"></td></tr></tfoot></table>');
+                if (jQuery(".EditSectionWrapper").length === 1) {
+                    jQuery('.basicTempFooter').draggable({
+                        disabled: true,
+                        revert: "valed",
+                    });
+                }
+            }
+        });
+
+        //Link BTN
+        jQuery(".sortable").droppable({
+            accept: ".linkBtn",
+            drop: function (event, ui) {
+                jQuery(this).append('<table class="delete" width="100%"><tr><td><a href="#" style="background: #0381f8; color: #fff; padding: 10px 25px; display: inline-block; border-radius: 4px; margin-top: 10px; margin-bottom: 10px;">Bacsic Link</a></td></tr></table>');
+            }
+        });
+
+        //Link BTN
+        jQuery(".sortable").droppable({
+            accept: ".socialBtn",
+            drop: function (event, ui) {
+                jQuery(this).append('<table class="delete" width="100%"><tr><td>Social</td></tr></table>');
+            }
+        });
+
     });
-
-    jQuery(".EditSectionWrapper").droppable({
-        accept: ".basicTemp",
-        drop: function (event, ui) {
-            var draggable = ui.draggable;
-            var id = draggable.attr("id");
-            jQuery(".EditSectionWrapper").append('<div><table><tr><td id="sortable"><div class="dragme"><div class="dragHoverEditWrapper"><div class="dragHoverEditBtnBox" id="deleteDragme"><img src="../images/bacsic_template/Delete.svg" alt=""></div><div class="dragHoverEditBtnBox" id="moveDragme"><img src="../images/bacsic_template/Move.svg" alt=""></div></div>Date</div><div class="dragme"><div class="dragHoverEditWrapper"><div class="dragHoverEditBtnBox" id="deleteDragme"><img src="../images/bacsic_template/Delete.svg" alt=""></div><div class="dragHoverEditBtnBox" id="moveDragme"><img src="../images/bacsic_template/Move.svg" alt=""></div></div>Dear Sir</div><div class="dragme"><div class="dragHoverEditWrapper"><div class="dragHoverEditBtnBox" id="deleteDragme"><img src="../images/bacsic_template/Delete.svg" alt=""></div><div class="dragHoverEditBtnBox" id="moveDragme"><img src="../images/bacsic_template/Move.svg" alt=""></div></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ducimus, nobis? Dolorum vel, quod, consequatur nulla amet libero perferendis laborum culpa aliquam odio omnis ipsum eligendi neque qui sint cupiditate!</div><div class="dragme"><div class="dragHoverEditWrapper"><div class="dragHoverEditBtnBox" id="deleteDragme"><img src="../images/bacsic_template/Delete.svg" alt=""></div><div class="dragHoverEditBtnBox" id="moveDragme"><img src="../images/bacsic_template/Move.svg" alt=""></div></div>Thanks</div><div class="dragme"><div class="dragHoverEditWrapper"><div class="dragHoverEditBtnBox" id="deleteDragme"><img src="../images/bacsic_template/Delete.svg" alt=""></div><div class="dragHoverEditBtnBox" id="moveDragme"><img src="../images/bacsic_template/Move.svg" alt=""></div></div>Sender Name</div></td></tr></table></div>');
-        }
-    });
-
-//    jQuery("#Header").draggable({
-//        containment: 'document',
-//        revert: "invalid",
-//        helper: "clone",
-//        cursor: "move"
-//    });
-//    //
-//    jQuery(".EditSectionWrapper").droppable({
-//        accept: "#Header",
-//        drop: function (event, ui) {
-//            var draggable = ui.draggable;
-//            var id = draggable.attr("id");
-//            jQuery(".EditSectionWrapper").append('<div><table><tr><td><img src="../images/bacsic_template/Logo.png"s alt=""></td></tr></table></div>');
-//        }
-//    });
-//    //
-//    jQuery("#footer").draggable({
-//        containment: 'document',
-//        revert: "invalid",
-//        helper: "clone",
-//        cursor: "move"
-//    });
-//
-//    jQuery(".EditSectionWrapper").droppable({
-//        accept: "#footer",
-//        drop: function (event, ui) {
-//            var draggable = ui.draggable;
-//            var id = draggable.attr("id");
-//            jQuery(".EditSectionWrapper").append('<div><table><tr><td>Footer</td></tr></table></div>');
-//        }
-//    });
-
-
-
-
-});
-
-

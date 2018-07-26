@@ -8,14 +8,14 @@
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../css/en/bootstrap.css">
-    <link rel="stylesheet" href="../css/common_style.css">
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="../css/en/menu.css">
-    <link rel="stylesheet" href="../css/en/style.css">
-    <link rel="stylesheet" href="../css/easy-responsive-tabs.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/mailedit.css">
+    <link rel="stylesheet" href="css/menu.css">
+
 
 </head>
 
@@ -25,17 +25,19 @@
         <div class="container">
             <div class="col-md-3 logo">Mail Spaghetti</div>
             <div class="col-md-6 topMenu">
-                <div id='cssmenu'>
-                    <ul>
-                        <li><a href='#'>Link_1</a></li>
-                        <li><a href='#'>Link_2</a></li>
-                        <li><a href='#'>Link_3</a></li>
-                        <li><a href='#'>Link_4</a></li>
-                    </ul>
+                <div class="row">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='#' class="dashboardBtn">Dashboard</a></li>
+                            <li><a href='#'>New template</a></li>
+                            <li><a href='#'>Templats</a></li>
+                            <li><a href='#'>Help</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-               <div class="userPhoto">
+                <div class="userPhoto">
                     <div class="userDropdown">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="4px">
                         <path fill-rule="evenodd"  fill="rgb(166, 167, 217)" d="M7.000,1.000 L7.000,2.000 L6.000,2.000 L6.000,3.000 L5.000,3.000 L5.000,4.000 L3.000,4.000 L3.000,3.000 L2.000,3.000 L2.000,2.000 L1.000,2.000 L1.000,1.000 L-0.000,1.000 L-0.000,-0.000 L8.000,-0.000 L8.000,1.000 L7.000,1.000 Z"/>
@@ -43,38 +45,143 @@
                     </div>
                     <div class="userDropdownListWrapper">
                         <ul>
-                            <li><a href="#">link_1</a></li>
-                            <li><a href="#">link_2</a></li>
-                            <li><a href="#">link_3</a></li>
-                            <li><a href="#">link_4</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Sign Out</a></li>
                         </ul>
                     </div>
-                   <img src="../images/userNoimage.jpg" alt="">
-               </div>
+                    <img src="images/userNoimage.jpg" alt="">
+                </div>
                 <div class="username">Aaron Morton</div>
             </div>
         </div>
     </div>
-    <div class="container-fluid main_container">
+    <!--Dashboard-->
+    <div class="container-fluid main_container dashboard">
+        <div class="container">
+
+            <div class="section">
+                <div class="mainPageTitle">
+                    <h2>Templates</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dashBoardBtn" id="selectTemplate"><a href="javascript:void(0)">Select template</a></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dashBoardBtn" id="newTemplate"><a href="javascript:void(0)">Create new template</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mainPageTitle">
+                    <h2>Analysis</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="dashBoardAnalysisBtn">
+                            <h3>250</h3>
+                            <span>Email sent</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dashBoardAnalysisBtn">
+                            <h3>34</h3>
+                            <span>Failed to sent</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dashBoardAnalysisBtn">
+                            <h3>100</h3>
+                            <span>Pending email</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="mainPageTitle">
+                    <h2>Queue</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table dashboardTable">
+                            <thead>
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Time</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>email@company.com</td>
+                                    <td>Sent</td>
+                                    <td>12.00</td>
+                                    <td>12 Sep 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>email@company.com</td>
+                                    <td>Sent</td>
+                                    <td>12.00</td>
+                                    <td>12 Sep 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>email@company.com</td>
+                                    <td>Sent</td>
+                                    <td>12.00</td>
+                                    <td>12 Sep 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>email@company.com</td>
+                                    <td>Sent</td>
+                                    <td>12.00</td>
+                                    <td>12 Sep 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>email@company.com</td>
+                                    <td>Sent</td>
+                                    <td>12.00</td>
+                                    <td>12 Sep 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>email@company.com</td>
+                                    <td>Sent</td>
+                                    <td>12.00</td>
+                                    <td>12 Sep 2018</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Template-->
+    <div class="container-fluid main_container templateGallery">
         <div class="container">
 
             <div class="section">
                 <div class="PageTitle">
-                  <div class="row">
-                   <div class="col-md-6"><h2>Templates</h2></div>
-                   <div class="col-md-6 rightAlignText"><a href="#" class="primaryBtn">Create New Template </a></div>
-                   </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Templates</h2>
+                        </div>
+                        <div class="col-md-6 rightAlignText"><a href="javascript:void(0)" class="primaryBtn creatNewTemp">Create New Template </a></div>
+                    </div>
                 </div>
                 <div class="row templatePageWrapper">
-                   <div class="section">
-                    <div class="col-md-6">
-                       <div class="templateSectionTitle">Templates</div>
-                        <div class="templateSelectionWrapper">
-                            <h2>Paragraph</h2>
-                            <div class="row">
-                               <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                    <div class="section">
+                        <div class="col-md-6">
+                            <div class="templateSectionTitle">Templates</div>
+                            <div class="templateSelectionWrapper">
+                                <h2>Paragraph</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="templateSelect paragraphTemp1">
+                                            <a href="#">
                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 206 230" version="1.1">
                                         <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                         <title>Group@1x</title>
@@ -102,11 +209,11 @@
                                         </g>
                                     </svg>
                                     </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect paragraphTemp2">
+                                            <a href="#">
                                     <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                         <title>Group Copy 4@1x</title>
@@ -148,11 +255,11 @@
                                         </g>
                                     </svg>
                                     </a>
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                        <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                             <title>Group Copy 5@1x</title>
@@ -195,11 +302,11 @@
                                             </g>
                                         </svg>
                                        </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                         <title>Group Copy 6@1x</title>
@@ -248,17 +355,17 @@
                                         </g>
                                     </svg>
                                     </a>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                </div>
-                                
                             </div>
-                        </div>
-                        <div class="templateSelectionWrapper">
-                            <h2>Images</h2>
-                            <div class="row">
-                               <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                            <div class="templateSelectionWrapper">
+                                <h2>Images</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                        <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                             <title>Group Copy 3@1x</title>
@@ -287,11 +394,11 @@
                                             </g>
                                         </svg>
                                     </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                         <title>Group Copy 2@1x</title>
@@ -318,11 +425,11 @@
                                         </g>
                                     </svg>
                                     </a>
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                        <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                             <title>Group Copy@1x</title>
@@ -350,24 +457,24 @@
                                             </g>
                                         </svg>
                                        </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     
                                     </a>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                </div>
-                                
                             </div>
-                        </div>
-                        <div class="templateSelectionWrapper">
-                            <h2>Video</h2>
-                            <div class="row">
-                               <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                            <div class="templateSelectionWrapper">
+                                <h2>Video</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                        <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                             <title>Group Copy 7@1x</title>
@@ -399,41 +506,41 @@
                                             </g>
                                         </svg>
                                                                             </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     
                                     </a>
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                        
                                        </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     
                                     </a>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                </div>
-                                
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                       <div class="templateSectionTitle">Your Templates</div>
-                        <div class="templateSelectionWrapper">
-                            <h2>Your Templates</h2>
-                            <div class="row">
-                               <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                        <div class="col-md-6">
+                            <div class="templateSectionTitle">Your Templates</div>
+                            <div class="templateSelectionWrapper">
+                                <h2>Your Templates</h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                           <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                                 <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                                 <title>Group Copy 8@1x</title>
@@ -461,11 +568,11 @@
                                                 </g>
                                             </svg>
                                       </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     <svg  viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                         <title>Group Copy 6@1x</title>
@@ -514,11 +621,11 @@
                                         </g>
                                     </svg>
                                     </a>
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                   <div class="templateSelect">
-                                      <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                        <svg viewBox="0 0 206 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                             <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
                                             <title>Group Copy 5@1x</title>
@@ -561,34 +668,200 @@
                                             </g>
                                         </svg>
                                        </a>
-                                   </div>
-                               </div>
-                                <div class="col-md-6">
-                                <div class="templateSelect">
-                                   <a href="#">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="templateSelect">
+                                            <a href="#">
                                     
                                     </a>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                </div>
-                                
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--Edit Template-->
+    <div class="container-fluid main_container editTemplate">
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="PageTitle">
+                        <div class="col-md-12">
+                            <h2>Edit Template</h2>
+                        </div>
+                        <div class="col-md-12 section">
+                            <div class="EditSectionWrapper" id="dragableContainer"></div>
+                            <div class="EditComponentsWrapper">
+                                <div id="tabs">
+                                    <ul>
+                                        <li><a href="#tabs-1">Components</a></li>
+                                        <li><a href="#tabs-2">Page setup</a></li>
+                                    </ul>
+                                    <div id="tabs-1">
+                                        <div class="section">
+                                            <div class="componentsItemTitle bacsicComTitle">basics</div>
+                                            <div class="basic Components">
+                                                <div class="ComponentsItem basicItem basicTempCenter" title="Center">
+                                                    <img src="images/Fav.svg" alt="Center">
+                                                </div>
+                                                <div class="ComponentsItem basicItem basicTempHeader" title="Header">
+                                                    <img src="images/Header.svg" alt="Header">
+                                                </div>
+                                                <div class="ComponentsItem basicItem basicTempFooter" title="Footer">
+                                                    <img src="images/Footer.svg" alt="Footer">
+                                                </div>
+                                            </div>
+
+                                            <div class="componentsItemTitle">Link</div>
+                                            <div class="link Components">
+                                                <div class="ComponentsItem linkItem">
+                                                    <img src="images/Button.svg" alt="Link">
+                                                </div>
+                                                <div class="ComponentsItem linkItem linkBtn">
+                                                    <img src="images/Importlink.svg" alt="Button">
+                                                </div>
+                                                <div class="ComponentsItem linkItem socialBtn">
+                                                    <img src="images/Facebook.svg" alt="Social media">
+                                                </div>
+                                            </div>
+
+                                            <div class="componentsItemTitle">Media</div>
+                                            <div class="media Components">
+                                                <div class="ComponentsItem mediaItem imgBtn">
+                                                    <img src="images/Image.svg" alt="">
+                                                </div>
+                                                <div class="ComponentsItem mediaItem videoBtn">
+                                                    <img src="images/Video.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="componentsItemTitle">Text</div>
+                                            <div class="text Components">
+                                                <div class="ComponentsItem textItem textBtn">
+                                                    <img src="images/Text.svg" alt="">
+                                                </div>
+                                                <div class="ComponentsItem textItem">
+                                                    <img src="images/Paragraph_r.svg" alt="">
+                                                </div>
+                                                <div class="ComponentsItem textItem">
+                                                    <img src="images/Paragraph_l.svg" alt="">
+                                                </div>
+                                                <div class="ComponentsItem textItem">
+                                                    <img src="images/Paragraph.svg" alt="">
+                                                </div>
+                                                <div class="ComponentsItem textItem">
+                                                    <img src="images/Paragraph_normal.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="componentsItemTitle">Divider</div>
+                                            <div class="text Components">
+                                                <div class="ComponentsItem textItem">
+                                                    <img src="images/Divider.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <input type="submit" class="primaryBtn ComponentsTemplateSave">
+
+                                        </div>
+                                    </div>
+                                    <div id="tabs-2">
+                                        <div class="section">
+                                            <div class="componentsItemFontTitle">Background Color</div>
+                                            <div class="colorPickerWrapper">
+                                                <input type="color" id="colorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#ffffff">
+                                                <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#ffffff" id="hexcolor" disabled>
+                                            </div>
+                                            <div class="componentsItemFontTitle">Font</div>
+                                            <div class="fontPickerWrapper">
+                                                <select id="FontFamily"> 
+                                                <option value="Helvetica">Helvetica</option>
+                                                <option value="Arial">Arial</option>
+                                                <option value="Times New Roman">Times New Roman</option>
+                                                <option value="Courier">Courier </option>
+                                                <option value="Impact">Impact </option>
+                                                <option value="Comic Sans MS">Comic Sans MS</option>
+                                            </select>
+                                            </div>
+
+                                            <div class="fontCustomWrapper">
+                                                <div class="fontCustom-6">
+                                                    <div class="componentsItemFontTitle">Font Color</div>
+                                                    <div class="colorPickerWrapper">
+                                                        <input type="color" id="fontcolorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#272727">
+                                                        <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#272727" id="fonthexcolor" disabled>
+                                                    </div>
+                                                </div>
+                                                <div class="fontCustom-6">
+                                                    <div class="componentsItemFontTitle">Font Size</div>
+                                                    <div class="fontSizeWrapper">
+                                                        <select id="fontSize">
+                                                        <option value="12">12px</option>
+                                                        <option value="14">14px</option>
+                                                        <option value="18">18px</option>
+                                                        <option value="24">24px</option>
+                                                        <option value="30">30px</option>
+                                                        <option value="36">36px</option>
+                                                        <option value="48">48px</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="componentsItemFontTitle">Padding</div>
+                                            <div class="paddingrWrapper">
+                                                <div class="fontCustom-6">
+                                                    <div class="componentsItemPaddingTitle">Left</div>
+                                                    <div class="PaddingWrapper">
+                                                        <input id="paddingLeft" name="paddingLeft" type="number" value="10" min="0" max="100">
+                                                    </div>
+                                                </div>
+                                                <div class="fontCustom-6">
+                                                    <div class="componentsItemPaddingTitle">Right</div>
+                                                    <div class="PaddingWrapper">
+                                                        <input id="paddingRight" name="paddingRight" type="number" value="10" min="0" max="100">
+                                                    </div>
+                                                </div>
+                                                <div class="fontCustom-6">
+                                                    <div class="componentsItemPaddingTitle">Top</div>
+                                                    <div class="PaddingWrapper">
+                                                        <input id="paddingTop" name="paddingTop" type="number" value="10" min="0" max="100">
+                                                    </div>
+                                                </div>
+                                                <div class="fontCustom-6">
+                                                    <div class="componentsItemPaddingTitle">Bottom</div>
+                                                    <div class="PaddingWrapper">
+                                                        <input id="paddingBottom" name="paddingBottom" type="number" value="10" min="0" max="100">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <input type="submit" class="primaryBtn ComponentsSave">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
-
-
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/jquery-ui.js"></script>
-    <script type="text/javascript" src="../js/menu.js"></script>
-    <script type="text/javascript" src="../js/allJavaScripts.js"></script>
-
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/allJavaScripts.js"></script>
+    <script type="text/javascript" src="js/drag.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 jQuery.noConflict();
-jQuery(window).load(function () {
+jQuery(document).ready(function () {
 
     jQuery(".userDropdown").click(function (event) {
         jQuery(".userDropdownListWrapper").slideDown("slow");
@@ -14,19 +14,12 @@ jQuery(window).load(function () {
         jQuery(".userDropdownListWrapper").slideUp("slow");
     });
 
-});
-
-jQuery(document).ready(function () {
-    
     //Tooltip
     jQuery('[data-toggle="tooltip"]').tooltip();
 
     //Tab
 
-    jQuery(function () {
-        jQuery("#tabs").tabs();
-    });
-
+    jQuery("#tabs").tabs();
 
     //Components Style
 
@@ -34,62 +27,117 @@ jQuery(document).ready(function () {
         jQuery(this).addClass("ComponentsItemActive");
         jQuery(".ComponentsItem").not(this).addClass("ComponentsItemNotActive");
     });
+
     jQuery(".ComponentsItem").mouseleave(function () {
         jQuery(this).removeClass("ComponentsItemActive");
         jQuery(".ComponentsItem").not(this).removeClass("ComponentsItemNotActive");
     });
 
-
     //Color Picker
 
     jQuery('#colorpicker').on('change', function () {
         jQuery('#hexcolor').val(this.value);
-        jQuery('.EditSectionWrapper').css("background", jQuery(this).val());
+        jQuery('.EditSectionWrapper>table').css("background", jQuery(this).val());
     });
+
     jQuery('#hexcolor').on('change', function () {
         jQuery('#colorpicker').val(this.value);
     });
 
     jQuery('#fontcolorpicker').on('change', function () {
         jQuery('#fonthexcolor').val(this.value);
-        jQuery('.EditSectionWrapper').css("color", jQuery(this).val());
+        jQuery('.EditSectionWrapper>table').css("color", jQuery(this).val());
     });
+
     jQuery('#fonthexcolor').on('change', function () {
         jQuery('#colorpicker').val(this.value);
     });
 
-
     //Font Family
 
     jQuery("#FontFamily").change(function () {
-        jQuery('.EditSectionWrapper').css("font-family", jQuery(this).val());
+        jQuery('.EditSectionWrapper>table').css("font-family", jQuery(this).val());
 
     });
 
     //Font Size
 
     jQuery("#fontSize").change(function () {
-        jQuery('.EditSectionWrapper').css("font-size", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper>table').css("font-size", jQuery(this).val() + "px");
     });
 
     //Padding Page
 
     jQuery("#paddingRight").change(function () {
-        jQuery('.EditSectionWrapper').css("padding-right", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper>table').css("padding-right", jQuery(this).val() + "px");
     });
 
     jQuery("#paddingLeft").change(function () {
-        jQuery('.EditSectionWrapper').css("padding-left", jQuery(this).val() + "px");
-    });
-    jQuery("#paddingTop").change(function () {
-        jQuery('.EditSectionWrapper').css("padding-top", jQuery(this).val() + "px");
-    });
-    jQuery("#paddingBottom").change(function () {
-        jQuery('.EditSectionWrapper').css("padding-bottom", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper>table').css("padding-left", jQuery(this).val() + "px");
     });
 
-    jQuery("#deleteDragme").click(function() {
+    jQuery("#paddingTop").change(function () {
+        jQuery('.EditSectionWrapper>table').css("padding-top", jQuery(this).val() + "px");
+    });
+
+    jQuery("#paddingBottom").change(function () {
+        jQuery('.EditSectionWrapper>table').css("padding-bottom", jQuery(this).val() + "px");
+    });
+
+    jQuery("#deleteDragme").click(function () {
         jQuery(this).siblings(".dragme").hide();
     });
-    
+
+    jQuery('#selectTemplate').click(function () {
+        //window.location.hash = 'selectTemplate';
+        jQuery('.dashboard').fadeOut();
+        jQuery('.templateGallery').delay(500).fadeIn();
+    });
+
+    jQuery('#newTemplate').click(function () {
+        jQuery('.EditSectionWrapper').addClass('sortable');
+        jQuery('.basic.Components').show();
+        jQuery('.dashboard').fadeOut();
+        jQuery('.editTemplate').delay(500).fadeIn();
+    });
+
+    jQuery('.creatNewTemp').click(function () {
+        jQuery('.EditSectionWrapper ').addClass('sortable');
+        jQuery('.basic.Components').show();
+        jQuery('.templateGallery').fadeOut();
+        jQuery('.editTemplate').delay(500).fadeIn();
+    });
+
+
+
+    jQuery('.logo,.dashboardBtn').click(function () {
+        jQuery('.templateGallery').fadeOut();
+        jQuery('.editTemplate').fadeOut();
+        jQuery('.dashboard').delay(500).fadeIn();
+        jQuery('.EditSectionWrapper table').remove();
+
+    });
+
+    jQuery(".paragraphTemp1").click(function () {
+        jQuery('.EditSectionWrapper').append('<table cellpadding="0" cellspacing="0" width="600"><thead><tr><td class="sortable" id="bt-head"></td></tr></thead><tbody><tr><td class="sortable" id="bt-body"></td></tr></tbody><tfoot><tr><td class="sortable" id="bt-footer"></td></tr></tfoot></table>');
+        jQuery('.dashboard').fadeOut();
+        jQuery('.editTemplate .PageTitle h2').text("Paragraph Template-1");
+        jQuery('.basic.Components').hide();
+        jQuery('.bacsicComTitle').hide();
+        jQuery('.templateGallery').fadeOut();
+        jQuery('.editTemplate').delay(500).fadeIn();
+    });
+
+    jQuery(".paragraphTemp2").click(function () {
+        jQuery('.EditSectionWrapper').append('<table cellpadding="0" cellspacing="0" width="600"><thead><tr><td colspan="3" class="sortable" id="bt-head"></td></tr></thead><tbody><tr><td width="33.33%" class="sortable" id="bt-3col-side-left"></td><td  width="33.33%"class="sortable" id="bt-3col-side-center"></td><td width="33.33%" class="sortable" id="bt-3col-side-right"></td></tr><tr><td colspan="3" class="sortable" id="bt-body"></td></tr></tbody><tfoot><tr><td colspan="3" class="sortable" id="bt-footer"></td></tr></tfoot></table>');
+        jQuery('.editTemplate .PageTitle h2').text("Paragraph Template-2");
+        jQuery('.dashboard').fadeOut();
+        jQuery('.basic.Components').hide();
+        jQuery('.bacsicComTitle').hide();
+        jQuery('.templateGallery').fadeOut();
+        jQuery('.editTemplate').delay(500).fadeIn();
+    });
+
+    jQuery('.delete').prepend('<div class="removeBtn"><button>X</button></div>');
+
 });
