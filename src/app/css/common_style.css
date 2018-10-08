@@ -366,7 +366,7 @@ a:hover {
 
 .EditSectionWrapper {
     width: 620px;
-    /*    min-height: 500px;*/
+    min-height: 500px;
     height: 100%;
     background: #fff;
     float: left;
@@ -380,6 +380,7 @@ a:hover {
     height: auto;
     background: #EEEFF7;
     float: left;
+    padding-top: 10px;
 }
 
 
@@ -757,3 +758,20 @@ table.delete:hover .removeBtn {
 .EditSectionWrapper:empty{
     background: red !important;
 }*/
+
+.StackedListWrapper{
+    height: 100%;
+}
+
+.EditSectionWrapper .StackedList {
+    position: relative;
+    min-height: 500px;
+}
+
+.Components.StackedList{
+    height: auto;
+}
+
+.StackedList li{
+    list-style: none;
+}
