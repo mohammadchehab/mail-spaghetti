@@ -37,7 +37,7 @@ jQuery(document).ready(function () {
 
     jQuery('#colorpicker').on('change', function () {
         jQuery('#hexcolor').val(this.value);
-        jQuery('.EditSectionWrapper>table').css("background", jQuery(this).val());
+        jQuery('.EditSectionWrapper .StackedList').css("background", jQuery(this).val());
     });
 
     jQuery('#hexcolor').on('change', function () {
@@ -46,7 +46,7 @@ jQuery(document).ready(function () {
 
     jQuery('#fontcolorpicker').on('change', function () {
         jQuery('#fonthexcolor').val(this.value);
-        jQuery('.EditSectionWrapper>table').css("color", jQuery(this).val());
+        jQuery('.EditSectionWrapper .StackedList').css("color", jQuery(this).val());
     });
 
     jQuery('#fonthexcolor').on('change', function () {
@@ -56,32 +56,32 @@ jQuery(document).ready(function () {
     //Font Family
 
     jQuery("#FontFamily").change(function () {
-        jQuery('.EditSectionWrapper>table').css("font-family", jQuery(this).val());
+        jQuery('.EditSectionWrapper .StackedList').css("font-family", jQuery(this).val());
 
     });
 
     //Font Size
 
     jQuery("#fontSize").change(function () {
-        jQuery('.EditSectionWrapper>table').css("font-size", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper .StackedList').css("font-size", jQuery(this).val() + "px");
     });
 
     //Padding Page
 
     jQuery("#paddingRight").change(function () {
-        jQuery('.EditSectionWrapper>table').css("padding-right", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper .StackedList').css("padding-right", jQuery(this).val() + "px");
     });
 
     jQuery("#paddingLeft").change(function () {
-        jQuery('.EditSectionWrapper>table').css("padding-left", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper .StackedList').css("padding-left", jQuery(this).val() + "px");
     });
 
     jQuery("#paddingTop").change(function () {
-        jQuery('.EditSectionWrapper>table').css("padding-top", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper .StackedList').css("padding-top", jQuery(this).val() + "px");
     });
 
     jQuery("#paddingBottom").change(function () {
-        jQuery('.EditSectionWrapper>table').css("padding-bottom", jQuery(this).val() + "px");
+        jQuery('.EditSectionWrapper .StackedList').css("padding-bottom", jQuery(this).val() + "px");
     });
 
     jQuery("#deleteDragme").click(function () {

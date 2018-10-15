@@ -759,19 +759,26 @@ table.delete:hover .removeBtn {
     background: red !important;
 }*/
 
-.StackedListWrapper{
+.StackedListWrapper {
     height: 100%;
 }
 
 .EditSectionWrapper .StackedList {
     position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.EditSectionWrapper .StackedList:empty {
+    position: relative;
     min-height: 500px;
 }
 
-.Components.StackedList{
+.Components.StackedList {
     height: auto;
 }
 
-.StackedList li{
+.StackedList li {
     list-style: none;
 }
