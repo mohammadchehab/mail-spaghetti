@@ -2,7 +2,8 @@
 
 body,
 html {
-    height: 100%
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -16,6 +17,31 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#outlook a {
+    padding: 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    border-collapse: collapse !important;
+}
+
+table,
+tr,
+td {
+    padding: 0;
+    vertical-align: top;
+    text-align: left;
 }
 
 .container {
@@ -63,6 +89,15 @@ a:hover {
     font-size: 24px;
     height: 75px;
     line-height: 75px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: inherit;
 }
 
 .username {
@@ -269,6 +304,10 @@ a:hover {
     margin: 0;
     margin-bottom: 7px;
     padding-bottom: 7px;
+}
+
+.dashboardTableWrapper {
+    overflow-x: auto;
 }
 
 .dashboardTable thead {
@@ -770,9 +809,24 @@ table.delete:hover .removeBtn {
     display: inline-block;
 }
 
-.EditSectionWrapper .StackedList:empty {
+td .StackedList:empty {
     position: relative;
     min-height: 500px;
+    padding: 20px;
+    text-align: center;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAH0lEQVQYV2NkQAVSjEh8KQYGhmcwATAHJAkSgHNAAgBJbgMfurLMvgAAAABJRU5ErkJggg==")repeat;
+}
+
+td .StackedList:empty:before {
+    content: "Drop here";
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #8a8a8a;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .Components.StackedList {

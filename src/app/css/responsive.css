@@ -1,0 +1,24 @@
+@media screen and (min-width: 1680px) {
+    /*
+    .container-fluid {
+        width: 1011px;
+    }
+*/
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+    .dashBoardAnalysisBtn,
+    .dashBoardBtn,
+    .username{
+        margin-bottom: 15px;
+    }
+    .templateSectionTitle{
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+}

@@ -88,36 +88,8 @@ jQuery(document).ready(function () {
         jQuery(this).siblings(".dragme").hide();
     });
 
-    jQuery('#selectTemplate').click(function () {
-        //window.location.hash = 'selectTemplate';
-        jQuery('.dashboard').fadeOut();
-        jQuery('.templateGallery').delay(500).fadeIn();
-    });
 
-    jQuery('#newTemplate').click(function () {
-        jQuery('.EditSectionWrapper').addClass('sortable');
-        jQuery('.basic.Components').show();
-        jQuery('.dashboard').fadeOut();
-        jQuery('.editTemplate').delay(500).fadeIn();
-    });
-
-    jQuery('.creatNewTemp').click(function () {
-        jQuery('.EditSectionWrapper ').addClass('sortable');
-        jQuery('.basic.Components').show();
-        jQuery('.templateGallery').fadeOut();
-        jQuery('.editTemplate').delay(500).fadeIn();
-    });
-
-
-
-    jQuery('.logo,.dashboardBtn').click(function () {
-        jQuery('.templateGallery').fadeOut();
-        jQuery('.editTemplate').fadeOut();
-        jQuery('.dashboard').delay(500).fadeIn();
-        jQuery('.EditSectionWrapper table').remove();
-
-    });
-
+    //TEMPLATE CHOOSE
     jQuery(".paragraphTemp1").click(function () {
         jQuery('.EditSectionWrapper').append('<table cellpadding="0" cellspacing="0" width="600"><thead><tr><td class="sortable" id="bt-head"></td></tr></thead><tbody><tr><td class="sortable" id="bt-body"></td></tr></tbody><tfoot><tr><td class="sortable" id="bt-footer"></td></tr></tfoot></table>');
         jQuery('.dashboard').fadeOut();

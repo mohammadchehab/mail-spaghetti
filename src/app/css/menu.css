@@ -209,13 +209,7 @@
     height: 0;
 }
 
-@media all and (max-width: 768px),
-only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
-only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
-only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px),
-only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
-only screen and (min-resolution: 192dpi) and (max-width: 1024px),
-only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+@media all and (max-width: 768px){
     #cssmenu {
         width: 100%;
     }
@@ -285,8 +279,8 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
         top: 22px;
         right: 17px;
         display: block;
-        height: 4px;
-        width: 20px;
+        height: 8px;
+        width: 30px;
         border-top: 2px solid #dddddd;
         border-bottom: 2px solid #dddddd;
         content: '';
@@ -297,7 +291,7 @@ only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
         right: 17px;
         display: block;
         height: 2px;
-        width: 20px;
+        width: 40px;
         background: #dddddd;
         content: '';
     }

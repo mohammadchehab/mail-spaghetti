@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mail Spaghetti</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--    <link rel="stylesheet" href="css/examples-app.css">-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animsition.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/mailedit.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid mainHeader">
+        <div class="container">
+            <div class="col-md-3 logo"><a href="index.html">Mail Spaghetti</a></div>
+            <div class="col-md-6 topMenu">
+                <div class="row">
+                    <div id='cssmenu'>
+                        <ul>
+                            <li><a href='index.html' class="dashboardBtn">Dashboard</a></li>
+                            <li><a href='edit_template.html'>New template</a></li>
+                            <li><a href='template.html'>Templats</a></li>
+                            <li><a href='#'>Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="userPhoto">
+                    <div class="userDropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="4px">
+                            <path fill-rule="evenodd" fill="rgb(166, 167, 217)" d="M7.000,1.000 L7.000,2.000 L6.000,2.000 L6.000,3.000 L5.000,3.000 L5.000,4.000 L3.000,4.000 L3.000,3.000 L2.000,3.000 L2.000,2.000 L1.000,2.000 L1.000,1.000 L-0.000,1.000 L-0.000,-0.000 L8.000,-0.000 L8.000,1.000 L7.000,1.000 Z" />
+                        </svg>
+                    </div>
+                    <div class="userDropdownListWrapper">
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                    <img src="images/userNoimage.jpg" alt="">
+                </div>
+                <div class="username">Aaron Morton</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Edit Template-->
+    <div class="container-fluid main_container animsition">
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="PageTitle">
+                        <div class="col-md-12">
+                            <h2>Edit Template</h2>
+                        </div>
+                        <div class="col-md-12 section">
+                            <section>
+                                <div class="EditSectionWrapper">
+                                    <div class="">
+                                        <table style="border-spacing: 0; border-collapse: collapse; vertical-align: top;" width="100%" height="100%" valign="top" align="left">
+                                            <tr>
+                                                <td>
+                                                    <div class="StackedList"></div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="EditComponentsWrapper">
+                                    <div id="tabs">
+                                        <ul>
+                                            <li><a href="#tabs-1">Components</a></li>
+                                            <li><a href="#tabs-2">Page setup</a></li>
+                                        </ul>
+                                        <div id="tabs-1">
+                                            <div class="section">
+                                                <div class="componentsItemTitle bacsicComTitle">basics</div>
+                                                <div class="basic Components StackedList">
+                                                    <div class="StackedListItem ComponentsItem basicItem basicTempCenter" tabindex="1" title="Center">
+                                                        <img src="images/Fav.svg" alt="Center">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem basicItem basicTempHeader" tabindex="1" title="Header">
+                                                        <img src="images/Header.svg" alt="Header">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem basicItem basicTempFooter" tabindex="1" title="Footer">
+                                                        <img src="images/Footer.svg" alt="Footer">
+                                                    </div>
+                                                </div>
+
+                                                <div class="componentsItemTitle">Link</div>
+                                                <div class="link Components StackedList">
+                                                    <div class="StackedListItem ComponentsItem linkItem">
+                                                        <img src="images/Button.svg" alt="Link">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem linkItem linkBtn">
+                                                        <img src="images/Importlink.svg" alt="Button">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem linkItem socialBtn">
+                                                        <img src="images/Facebook.svg" alt="Social media">
+                                                    </div>
+                                                </div>
+
+                                                <div class="componentsItemTitle">Media</div>
+                                                <div class="media Components StackedList">
+                                                    <div class="StackedListItem ComponentsItem mediaItem imgBtn">
+                                                        <img src="images/Image.svg" alt="">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem mediaItem videoBtn">
+                                                        <img src="images/Video.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="componentsItemTitle">Text</div>
+                                                <div class="text Components StackedList">
+                                                    <div class="StackedListItem ComponentsItem textItem textBtn">
+                                                        <img src="images/Text.svg" alt="">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem textItem">
+                                                        <img src="images/Paragraph_r.svg" alt="">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem textItem">
+                                                        <img src="images/Paragraph_l.svg" alt="">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem textItem">
+                                                        <img src="images/Paragraph.svg" alt="">
+                                                    </div>
+                                                    <div class="StackedListItem ComponentsItem textItem">
+                                                        <img src="images/Paragraph_normal.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="componentsItemTitle">Divider</div>
+                                                <div class="text Components StackedList">
+                                                    <div class="StackedListItem ComponentsItem textItem">
+                                                        <img src="images/Divider.svg" alt="">
+                                                    </div>
+                                                </div>
+
+                                                <input type="submit" class="primaryBtn ComponentsTemplateSave">
+
+                                            </div>
+                                        </div>
+                                        <div id="tabs-2">
+                                            <div class="section">
+                                                <div class="componentsItemFontTitle">Background Color</div>
+                                                <div class="colorPickerWrapper">
+                                                    <input type="color" id="colorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#ffffff">
+                                                    <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#ffffff" id="hexcolor" disabled>
+                                                </div>
+                                                <div class="componentsItemFontTitle">Font</div>
+                                                <div class="fontPickerWrapper">
+                                                    <select id="FontFamily">
+                                                        <option value="Helvetica">Helvetica</option>
+                                                        <option value="Arial">Arial</option>
+                                                        <option value="Times New Roman">Times New Roman</option>
+                                                        <option value="Courier">Courier </option>
+                                                        <option value="Impact">Impact </option>
+                                                        <option value="Comic Sans MS">Comic Sans MS</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="fontCustomWrapper">
+                                                    <div class="fontCustom-6">
+                                                        <div class="componentsItemFontTitle">Font Color</div>
+                                                        <div class="colorPickerWrapper">
+                                                            <input type="color" id="fontcolorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#272727">
+                                                            <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#272727" id="fonthexcolor" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fontCustom-6">
+                                                        <div class="componentsItemFontTitle">Font Size</div>
+                                                        <div class="fontSizeWrapper">
+                                                            <select id="fontSize">
+                                                                <option value="12">12px</option>
+                                                                <option value="14">14px</option>
+                                                                <option value="18">18px</option>
+                                                                <option value="24">24px</option>
+                                                                <option value="30">30px</option>
+                                                                <option value="36">36px</option>
+                                                                <option value="48">48px</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="componentsItemFontTitle">Padding</div>
+                                                <div class="paddingrWrapper">
+                                                    <div class="fontCustom-6">
+                                                        <div class="componentsItemPaddingTitle">Left</div>
+                                                        <div class="PaddingWrapper">
+                                                            <input id="paddingLeft" name="paddingLeft" type="number" value="10" min="0" max="100">
+                                                        </div>
+                                                    </div>
+                                                    <div class="fontCustom-6">
+                                                        <div class="componentsItemPaddingTitle">Right</div>
+                                                        <div class="PaddingWrapper">
+                                                            <input id="paddingRight" name="paddingRight" type="number" value="10" min="0" max="100">
+                                                        </div>
+                                                    </div>
+                                                    <div class="fontCustom-6">
+                                                        <div class="componentsItemPaddingTitle">Top</div>
+                                                        <div class="PaddingWrapper">
+                                                            <input id="paddingTop" name="paddingTop" type="number" value="10" min="0" max="100">
+                                                        </div>
+                                                    </div>
+                                                    <div class="fontCustom-6">
+                                                        <div class="componentsItemPaddingTitle">Bottom</div>
+                                                        <div class="PaddingWrapper">
+                                                            <input id="paddingBottom" name="paddingBottom" type="number" value="10" min="0" max="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <input type="submit" class="primaryBtn ComponentsSave">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/animsition.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/allJavaScripts.js"></script>
+
+
+    <!-- Entire bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.bundle.js"></script>
+    <!-- legacy bundle for older browsers (IE11) -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/draggable.bundle.legacy.js"></script>
+    <!-- Draggable only -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.2/lib/draggable.js"></script>
+    <!-- Sortable only -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/sortable.js"></script>
+    <!-- Droppable only -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/droppable.js"></script>
+    <!-- Swappable only -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/swappable.js"></script>
+    <!-- Plugins only -->
+    <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.8/lib/plugins.js"></script>
+
+
+
+
+    <script>
+        jQuery('.animsition').animsition({
+            inClass: 'zoom-in-sm',
+            outClass: 'zoom-out-sm'
+        });
+
+    </script>
+
+    <script>
+        var draggable = new window.Draggable.Sortable(document.querySelectorAll('.StackedList'), {
+            draggable: '.StackedListItem'
+        });
+
+        draggable.on('drag:stop', (e) => {
+            var cc = jQuery(e.data.originalSource).clone();
+            cc.css("display", "");
+            jQuery(e.data.sourceContainer).append(cc);
+            console.dir(e);
+        });
+
+    </script>
+</body>
+
+</html>
