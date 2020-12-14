@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2020-12-14T13:11:02.122Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" version="13.10.9" etag="cohWkLPURi95m036TdwF" type="github"><diagram id="4VFNVK2kk8L2F4eWL0IC">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-12-14T13:18:09.332Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="4--rr1YcMoXJGz_3JOuj" version="13.10.9" type="github">
+  <diagram id="4VFNVK2kk8L2F4eWL0IC" name="Page-1">
+    <mxGraphModel dx="2101" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="uZ9DFQqxu6OnSk_cgdgz-1" target="uZ9DFQqxu6OnSk_cgdgz-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-1" value="Template Builder" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-3" value="mail queue" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.communications.queue_viewer;" vertex="1" parent="1">
+          <mxGeometry x="270.5" y="253" width="59" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="uZ9DFQqxu6OnSk_cgdgz-12" target="uZ9DFQqxu6OnSk_cgdgz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-12" value="Template Processor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-17" value="Document Database" style="aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.code_file" vertex="1" parent="1">
+          <mxGeometry x="116.5" y="260" width="47" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.007;entryY=0.662;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="uZ9DFQqxu6OnSk_cgdgz-19" target="uZ9DFQqxu6OnSk_cgdgz-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-20" y="240" />
+              <mxPoint x="78" y="240" />
+              <mxPoint x="78" y="293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="uZ9DFQqxu6OnSk_cgdgz-19" target="uZ9DFQqxu6OnSk_cgdgz-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="210" />
+              <mxPoint x="240" y="210" />
+              <mxPoint x="240" y="282" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uZ9DFQqxu6OnSk_cgdgz-19" value="API Catalog" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
